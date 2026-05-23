@@ -2,13 +2,9 @@
 
 This folder contains the implementation code of **FairCounterfactual**:
 
-- FairLabeler Code:  
+- FairCounterfactual Code:  
 
-  https://drive.google.com/drive/folders/1YbldkbY_0C3voIQtkisRoQDj368kSxU5
-
-- Ablation Study Results:  
-
-  https://drive.google.com/drive/folders/1qYz63XBFAsufE6jk1u265CG8kxLH5X2Q
+ https://drive.google.com/drive/folders/1FLcmV_Uq5sqHh1kiaLHRNgRMqTovOe2P
 
 ---
 
@@ -28,11 +24,9 @@ This folder contains the implementation code of **FairCounterfactual**:
 
 | Student [5] | Student academic records used to predict the likelihood of achieving high grades. | Sex | 1,044 | 25 |
 
-| Bank [6] | Portuguese bank marketing data used to predict client term deposit subscription. | Age | 11,162 | 11 |
+| Default [6] | Financial records of Taiwanese customers used to predict the risk of payment default. | Sex | 30,000 | 24 |
 
-| Default [7] | Financial records of Taiwanese customers used to predict the risk of payment default. | Sex | 30,000 | 24 |
-
-| MEPS15 [8] | Survey records from a 2015 U.S. study collecting information about households and associated healthcare providers. | Race | 15,830 | 139 |
+| MEPS15 [7] | Survey records from a 2015 U.S. study collecting information about households and associated healthcare providers. | Race | 15,830 | 139 |
 
 | MEPS16 [8] | Survey records from a 2016 U.S. study collecting information about households and associated healthcare providers. | Race | 15,675 | 139 |
 
@@ -55,8 +49,6 @@ This folder contains the implementation code of **FairCounterfactual**:
 | Equal Opportunity Difference (EOD) | Difference in TPR between unprivileged and privileged groups. <br><br> EOD = TPR<sub>U</sub> − TPR<sub>P</sub> | 0 | Accuracy | (TP + TN) / (TP + TN + FP + FN) | 1 |
 
 | Statistical Parity Difference (SPD) | Difference in probability of favorable outcome between groups. <br><br> SPD = P(Ŷ = 1 \| a = 0) − P(Ŷ = 1 \| a = 1) | 0 | Precision | TP / (TP + FP) | 1 |
-
-| Disparate Impact (DI) | Ratio of favorable outcome probabilities between groups. <br><br> DI = P(Ŷ = 1 \| a = 0) / P(Ŷ = 1 \| a = 1) | 1 | F1 Score | 2 × (Precision × Recall) / (Precision + Recall) | 1 |
 
 | Flip Rate (FR) | Proportion of instances where prediction changes when protected attribute is flipped. <br><br> FR = P(Ŷ[PA=0] ≠ Ŷ[PA=1]) | 0 | — | — | — |
 
@@ -84,14 +76,10 @@ https://archive.ics.uci.edu/ml/datasets/Heart+Disease
 
 https://archive.ics.uci.edu/ml/datasets/Student+Performance
 
-[6] Bank Marketing (UCI / Kaggle), 2017.  
-
-https://www.kaggle.com/c/bank-marketing-uci
-
-[7] UCI Default of Credit Card Clients Dataset, 2016.  
+[6] UCI Default of Credit Card Clients Dataset, 2016.  
 
 https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients
 
-[8] Medical Expenditure Panel Survey (MEPS), 2015–2016.  
+[7] Medical Expenditure Panel Survey (MEPS), 2015–2016.  
 
 https://meps.ahrq.gov/mepsweb/
