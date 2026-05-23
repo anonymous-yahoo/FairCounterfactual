@@ -83,3 +83,22 @@ https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients
 [7] Medical Expenditure Panel Survey (MEPS), 2015–2016.  
 
 https://meps.ahrq.gov/mepsweb/
+
+---------
+
+# Deep Learning Architectures Used in This Study
+
+# Deep Learning Configurations
+
+The experiments were conducted using four deep learning architectures.  
+Each configuration was executed 20 independent times, and the average results across all runs were reported to reduce the impact of randomness.
+
+| Model | Hidden Layer Configuration | Optimizer | Epochs | Output Activation |
+|---|---|---|---|---|
+| DL1 | [64, 32, 16, 8, 4] | Nadam | 20 | Sigmoid |
+| DL2 | [50, 30, 15, 10, 5] | Nadam | 20 | Sigmoid |
+| DL3 | [30, 20, 15, 10, 5] | Nadam | 20 | Sigmoid |
+| DL4 | [30, 20, 15, 15, 10] | Nadam | 20 | Sigmoid |
+
+All models employed ReLU activation in the hidden layers and binary cross-entropy as the loss function.
+
