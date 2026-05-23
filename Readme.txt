@@ -96,9 +96,8 @@ Each configuration was executed 20 independent times, and the average results ac
 | Model | Hidden Layer Configuration | Optimizer | Epochs | Output Activation |
 |---|---|---|---|---|
 | DL1 | [64, 32, 16, 8, 4] | Nadam | 20 | Sigmoid |
-| DL2 | [50, 30, 15, 10, 5] | Nadam | 20 | Sigmoid |
-| DL3 | [30, 20, 15, 10, 5] | Nadam | 20 | Sigmoid |
-| DL4 | [30, 20, 15, 15, 10] | Nadam | 20 | Sigmoid |
+| DL2 | [30, 20, 15, 10, 5] | Nadam | 20 | Sigmoid |
+| DL3 | [30, 20, 15, 15, 10] | Nadam | 20 | Sigmoid |
 
 All models employed ReLU activation in the hidden layers and binary cross-entropy as the loss function.
 
